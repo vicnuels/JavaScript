@@ -17,10 +17,14 @@
     <h1>Olá, mundo! (Hello, Word!)</h1> 
     <p>Já me livre da maldição</p>
     <script>
-        // javascrit
-        window.alert('Minha primeira mensagem!') // alerta
-        window.confirm('Estás gostando de JS?') // pergunta (OK/cancel)
-        window.prompt('Qual é seu nome?') // interação com o usuario
+        /*var n1 = Number.parseFloat(window.prompt("DIgite o primeiro número."))
+        var n2 = Number.parseFloat(window.prompt("DIgite o segundo número."))*/
+        var n1 = Number(window.prompt("DIgite o primeiro número."))
+        var n2 = Number(window.prompt("DIgite o segundo número."))
+        var soma = n1 + n2
+        window.alert(`A soma entre ${n1} e ${n2} é ${soma}`)
+        // (number + number) para adição
+        // (String + String) para concatenação
     </script>
 </body>
 </html>
