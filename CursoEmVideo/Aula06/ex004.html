@@ -15,6 +15,18 @@
     <script>
         var nome = window.prompt("Digite seu nome.")
         document.write(`Seu nome tem ${nome.length} letras`)
+        //Para alterar um texto para maiúsculo em JavaScript, utilizamos o método toUpperCase(). Para alterar para minúsculo, utilizamos o método toLowerCase().
+        
+        alert("Vamos formar o número 568.56 para moeda (R$)")
+        var valor = 568.56;
+
+        //Valor com cifrão
+	    var valorFormatado = valor.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })
+	    alert('O valor formatado de ' + valor + ' é ' + valorFormatado)
+
+        //Valor sem cifrão	
+	    var valorFormatado2 = valor.toLocaleString('pt-BR', { minimumFractionDigits: 2});
+	    alert('O valor formatado sem o cifrão de ' + valor + ' é ' + valorFormatado2);
     </script>
 </body>
 </html>
