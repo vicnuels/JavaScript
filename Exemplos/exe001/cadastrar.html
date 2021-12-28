@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=for, initial-scale=1.0">
+    <title>Agenda</title>
+
+    <link rel="stylesheet" href="./styles/styleGlobal.css" type="text/css">
+    <link rel="stylesheet" href="./styles/styleCadastrar.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <h1 class="title">Agenda de Contatos</h1>
+
+        <nav class="nav">
+            <ul class="list-nav">
+                <li class="item-list-nav"><a href="listar.html">Listar</a></li>
+                <li class="item-list-nav"><a href="index.html">Inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="main">
+        <div class="alert">
+            <span></span>
+
+            <span class="close-alert">
+                &times;
+            </span>
+        </div>
+        <form class="form">
+            <div class="div-form">
+                <input type="text" name="nome" id="nome" placeholder="Digite o nome" required class="input-form">
+            </div>
+            <div class="div-form">
+                <input type="email" name="email" id="email" placeholder="Digite o email" class="input-form">
+            </div>
+            <div class="div-form">
+                <input type="tel" name="whatsapp" id="whatsapp" placeholder=" Digite o número de whatsapp" required
+                    class="input-form">
+            </div>
+            <div class="div-btn">
+                <button type="submit" class="btn-primary">
+                    Salvar
+                </button>
+            </div>
+        </form>
+    </main>
+    <footer class="footer">
+        <p>Victor Lima &copy; 2021</p>
+    </footer>
+
+    <script src="scriptCadastrar.js"></script>
+</body>
+
+</html>
